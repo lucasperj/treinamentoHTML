@@ -5,7 +5,7 @@
 }
 
 body {
-    background:rgba(255, 255, 255, 0.836);
+    background:black;
     font-family: "Poppins", sans-serif;
 
 }
@@ -21,12 +21,86 @@ body {
     width: 300px;
     height: 250px;
     border-radius:15px;
-    /* padding:20px    */
+    float:left;
 }
 #items{
-    font-family: "Poppins", italic;
+    font-family: "Poppins",Georgia, 'Times New Roman', Times, serif;
     color:red
+    
 }
+.title1{
+    background-color: black;
+}
+
 #description1{
     color: rgba(255, 0, 0, 0.856);
 }
+#storage{
+    display: flex;
+}
+
+.description{
+    text-align:justify;
+    font-size: 12px;
+    font-family: monospace;
+    text-indent: center;
+    padding: 50px;
+    background-color:black;
+    color: white;
+}
+
+
+
+.photo1 {
+    align-items: right;
+    margin: 3px 50px;
+    width: 350px;
+    height: 300px;
+    border-radius:15px;
+    float:left;
+}
+.photo2 {
+    align-items: right;
+    margin: 3px 50px;
+    width: 350px;
+    height: 150px;
+    border-radius:15px;
+    float: left;
+}
+.photo3 {
+    align-items: right;
+    margin: 3px 50px;
+    width: 190px;
+    height: 210px;
+    border-radius:15px;
+    float:left;
+}
+.photo4 {
+    align-items: right;
+    margin: 3px 50px;
+    width: 400px;
+    height: 300px;
+    border-radius:15px;
+    float: left;
+}
+.photo5 {
+    align-items: right;
+    margin: 3px 50px;
+    width: 260px;
+    height: 230px;
+    border-radius:15px;
+    float:left
+}
+.photo6 {
+    align-items: right;
+    margin: 3px 50px;
+    width: 260px;
+    height: 230px;
+    border-radius:15px;
+    float: left;
+}
+
+.description3{
+    font-style: italic;
+}
+
