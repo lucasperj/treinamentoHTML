@@ -1,11 +1,11 @@
 body{
-    background-color:	#FF69B4;
-    color: white;
+    background-color: HotPink;
+    color: White;
 }
 div {
     text-align: center;
     width: 800px;
-    height: 130px;
+    height: 120px;
     margin: 0 auto;
     background-color: #DDA0DD;
     padding: 0 20px 2px 20px;
@@ -22,6 +22,48 @@ div {
 
 
 }
+.Orgoes {
+
+    text-align: center;
+    width: 450px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #DDA0DD;
+    padding: 0 20px 2px 20px;
 
 
+}
+
+.orgoest{
+    text-align: center;
+    width: 800px;
+    height: 830px;
+    margin: 0 auto;
+    background-color: #DDA0DD;
+    padding: 0 20px 2px 20px;
+
+}
+.td1{
+
+    text-align:center;
+    font-size: 25px;
+    color: black;
+    display: block;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 50px;
+    height: 480px;
+    padding-bottom: 250px;
+
+}
+.Direitos
+/* {
+    text-align: center;
+    width: 800px;
+    height: 830px;
+    margin: 0 auto;
+    background-color: #DDA0DD;
+    padding: 0 20px 2px 20px;
+ 
+} */
 
