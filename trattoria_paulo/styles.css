@@ -1,0 +1,42 @@
+body{
+    background-image:url(background.jpg) ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;   
+}
+.vermelho{
+    background-color: rgb(168, 3, 3);
+    color: white;
+    padding: 20px;
+    width: 70%;
+    border: 1px solid white;
+    margin: auto;
+    font-size: 66px; 
+}
+.conteiner{
+    width: 70%;
+    background-color: rgb(3, 46, 3);
+    color: white;
+    border: 1px solid white;
+    margin: auto;
+    padding: 20px;
+}
+.quemsomos{
+    background-color: white;
+    color: #000;
+    padding: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 15px;
+}
+.aaa{
+    font-size: 24px;
+    text-align: center;
+}
+.bbb{
+    background-color: rgb(236, 200, 131);
+    width: auto;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0); 
+}
+div{
+    border-radius: 15px;
+}
