@@ -5,102 +5,49 @@
 }
 
 body {
-    background:black;
+    background:linear-gradient(to left,black,rgb(238, 97, 97),black);
     font-family: "Poppins", sans-serif;
 
 }
 
 #header-title{
+    font-style:italic;
     text-align: center;
     color: red;
+    font-size:30px;
 }
 
- .photo {
-    align-items: right;
-    margin: 3px 100px;
-    width: 300px;
-    height: 250px;
-    border-radius:15px;
-    float:left;
+
+.title1{
+    text-align: center;
 }
-#items{
-    font-family: "Poppins",Georgia, 'Times New Roman', Times, serif;
-    color:red
+ #items {
+     text-align: center;
     
 }
-.title1{
-    background-color: black;
+.photo2{
+    margin: 3px 100px;
+    width: 320px;
 }
 
-#description1{
-    color: rgba(255, 0, 0, 0.856);
+.photo{
+    margin: 3px 100px;
+    width: 320px;
+    height: 250px;
 }
-#storage{
-    display: flex;
+#tempo{
+    font-family: "Poppins",Georgia;
+    color:red;
+    font-size: 20px;   
 }
+
+
 
 .description{
     text-align:justify;
-    font-size: 12px;
+    font-size: 20px;
     font-family: monospace;
     text-indent: center;
-    padding: 50px;
-    background-color:black;
-    color: white;
+    padding:5px;
+    color:white;
 }
-
-
-
-.photo1 {
-    align-items: right;
-    margin: 3px 50px;
-    width: 350px;
-    height: 300px;
-    border-radius:15px;
-    float:left;
-}
-.photo2 {
-    align-items: right;
-    margin: 3px 50px;
-    width: 350px;
-    height: 150px;
-    border-radius:15px;
-    float: left;
-}
-.photo3 {
-    align-items: right;
-    margin: 3px 50px;
-    width: 190px;
-    height: 210px;
-    border-radius:15px;
-    float:left;
-}
-.photo4 {
-    align-items: right;
-    margin: 3px 50px;
-    width: 400px;
-    height: 300px;
-    border-radius:15px;
-    float: left;
-}
-.photo5 {
-    align-items: right;
-    margin: 3px 50px;
-    width: 260px;
-    height: 230px;
-    border-radius:15px;
-    float:left
-}
-.photo6 {
-    align-items: right;
-    margin: 3px 50px;
-    width: 260px;
-    height: 230px;
-    border-radius:15px;
-    float: left;
-}
-
-.description3{
-    font-style: italic;
-}
-
