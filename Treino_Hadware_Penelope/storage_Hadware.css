@@ -5,28 +5,49 @@
 }
 
 body {
-    background:rgba(255, 255, 255, 0.836);
+    background:linear-gradient(to left,black,rgb(238, 97, 97),black);
     font-family: "Poppins", sans-serif;
 
 }
 
 #header-title{
+    font-style:italic;
     text-align: center;
     color: red;
+    font-size:30px;
 }
 
- .photo {
-    align-items: right;
+
+.title1{
+    text-align: center;
+}
+ #items {
+     text-align: center;
+    
+}
+.photo2{
     margin: 3px 100px;
-    width: 300px;
+    width: 320px;
+}
+
+.photo{
+    margin: 3px 100px;
+    width: 320px;
     height: 250px;
-    border-radius:15px;
-    /* padding:20px    */
 }
-#items{
-    font-family: "Poppins", italic;
-    color:red
+#tempo{
+    font-family: "Poppins",Georgia;
+    color:red;
+    font-size: 20px;   
 }
-#description1{
-    color: rgba(255, 0, 0, 0.856);
+
+
+
+.description{
+    text-align:justify;
+    font-size: 20px;
+    font-family: monospace;
+    text-indent: center;
+    padding:5px;
+    color:white;
 }
