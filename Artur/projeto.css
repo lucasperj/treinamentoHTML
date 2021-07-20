@@ -1,11 +1,11 @@
 body{
-    background-color:	#FF69B4;
-    color: white;
+    background-color: HotPink;
+    color: White;
 }
 div {
     text-align: center;
     width: 800px;
-    height: 130px;
+    height: 120px;
     margin: 0 auto;
     background-color: #DDA0DD;
     padding: 0 20px 2px 20px;
@@ -22,6 +22,90 @@ div {
 
 
 }
+.Orgaos{
+    background-color:#DDA0DD;
+
+}
+.Orgoes {
+
+    text-align: center;
+    width: 450px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #DDA0DD;
+    padding: 0 20px 2px 20px;
 
 
+}
 
+.orgoest{
+    text-align: center;
+    width: 800px;
+    height: 830px;
+    margin: 0 auto;
+    background-color: #DDA0DD;
+    padding: 0 20px 2px 20px;
+
+}
+.td1{
+
+    text-align:center;
+    font-size: 25px;
+    color: black;
+    display: block;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 50px;
+    height: 480px;
+    padding-bottom: 250px;
+
+}
+
+
+.tabled
+{
+    text-align: center;
+    width: 800px;
+    height: 735px;
+    margin: 0 auto;
+    background-color: #DDA0DD;
+    padding: 0 20px 2px 20px;
+    border-radius: 50px;
+ 
+}
+
+.coluna{
+    text-align:center;
+    font-size: 25px;
+    color: black;
+    display: block;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 50px;
+    height: 380px;
+    padding-bottom: 250px;
+}
+
+.tabled2
+{
+    text-align: center;
+    width: 800px;
+    height: 755px;
+    margin: 0 auto;
+    background-color: #DDA0DD;
+    padding: 0 20px 2px 20px;
+
+}
+.coluna2{
+    
+    text-align:center;
+    font-size: 25px;
+    color: black;
+    display: block;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 50px;
+    width: 750px;
+    height: 410px;
+    padding-bottom: 250px;
+}
