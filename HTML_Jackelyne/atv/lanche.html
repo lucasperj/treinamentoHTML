@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardapio</title>
+    <link rel="stylesheet" href="lanche.css">
+ </head>
+<body>
+    <header>
+        <h1>Cardapio</h1>
+    </header>
+    <section>
+        <div>
+
+            <p>
+                Qual lanche voce deseja?<br/>
+            </p>
+
+            <p>
+                1 - Cachorro Quente - R$ 4,00<br/>
+                2 - X-Salada - R$ 4,50<br/>
+                3 - X-Bacon - RS 5,00<br/>
+                4 - Torrada Simples - R$ 2,00<br/>
+                5 - Refrigerante - R$ 1,50<br/>
+            </p>
+
+            <p>
+                Digite o numero correspondente acima. 
+                <input type="number" name="lanche" id="lch">
+             </p>
+
+            <p>
+                Quantidade:<br/>
+                <input type="number" name="Quantidade" id="qnt" min="1">
+            </p>
+
+            <p>
+                <input type="button" value="Enviar Pedido" onclick="calcular()">
+            
+            </p>
+
+        </div>
+
+        <p>Valor a Pagar:</p>
+
+        <div id="resultado"></div>
+
+    </section>
+    <footer>
+        <p>Obrigada Pela Preferencia</p>
+    </footer>
+    <script src="lanche.js"></script>
+</body>
+</html>
