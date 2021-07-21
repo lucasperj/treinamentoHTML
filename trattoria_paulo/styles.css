@@ -1,19 +1,23 @@
 body{
     background-image:url(background.jpg) ;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;   
+    font-size: 18px; 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;  
 }
 .vermelho{
     background-color: rgb(168, 3, 3);
     color: white;
     padding: 20px;
-    width: 70%;
+    width: 80%;
     border: 1px solid white;
     margin: auto;
     font-size: 66px; 
 }
 .conteiner{
-    width: 70%;
+    width: 80%;
     background-color: rgb(3, 46, 3);
     color: white;
     border: 1px solid white;
@@ -33,9 +37,10 @@ body{
 }
 .bbb{
     background-color: rgb(236, 200, 131);
-    width: auto;
+    width: 83%;
     color: rgb(0, 0, 0);
     border: 1px solid rgb(0, 0, 0); 
+    margin: auto;
 }
 div{
     border-radius: 15px;
