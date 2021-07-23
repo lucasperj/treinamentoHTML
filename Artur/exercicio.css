@@ -1,0 +1,22 @@
+.primeira{
+    font-size: 25px;
+    background-color: cornflowerblue;
+    width: 35px;
+    color:white;
+
+
+}
+.tabela{
+    width: 600px;
+    border: 1px solid black;
+    border-color: black;
+    border-collapse: collapse;
+    margin: 0px auto;
+    margin-top: 2cm;
+    
+}
+.coluna{
+    text-align: center;
+    border: 1px solid black;
+
+}

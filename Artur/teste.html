@@ -40,16 +40,18 @@
 
         </style>
     </head>
-
+    <body>
         <br class="titulo"><h1>Ola mundo</h1></br>
         <!-- <a id="div1" href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><p>Clieque</p></a> -->
         <div id="div1">
             <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" id ="a"><p>Clique ai</p></a>
         </div>
        <div id="div2"> Clica ai </div> 
+       <div id="res">= </div>
        <input type="number" name="num1" id="num1"> +
        <input type="number" name="num2" id="num2">
-       <input type="button" name="somar" onclick="somar">
+       <input type="button" value="somar" onclick="somar">
+    </body>
         <script>
             // var nome= window.prompt('Me informe o seu nome: ')
             // var num1= parseInt(window.prompt('Me informe a sua primeira nota: '))
@@ -77,7 +79,12 @@
             }
             function somar(){
                 var num1=window.document.getElementById('num1')
-                var num2=window.document.getElementById('input#num2')
+                var num2=window.document.querySelector('input#num2')
+                var res=window.document.getElementById('res')
+                var n1= Number(num1.value)
+                var n2= Number(num2.value)
+                
+                res.innerHTML= (n1+n2)
             }
         </script>
     
