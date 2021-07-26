@@ -1,0 +1,33 @@
+body{
+    background-image: url(https://blog.consumer.com.br/wp-content/uploads/2020/11/culin%C3%A1ria-regional-brasileira.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    color:black;
+
+}
+section{
+    background-color:white;
+    border-radius: 10px;
+    align-items: center;
+}
+.container{
+    margin: 5%;
+    text-align: center;
+}
+header{
+    background-color:white;
+    color: black;
+    margin: 2px;
+    padding: center;
+    border-radius: 10px;
+    text-align: center;
+    
+
+}
+.aaaa{
+    background-color:white;
+    border-radius: 10px;
+    padding: 20px;
+    border: 3px solid black;
+    
+}
