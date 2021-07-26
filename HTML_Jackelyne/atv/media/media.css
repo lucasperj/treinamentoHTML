@@ -1,0 +1,23 @@
+body {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 163, 213);
+    text-align: center;
+}
+
+section {
+
+    background-color: blueviolet;
+    border-radius: 10PX;
+    margin-top: 500PX;
+    margin-right: 300PX;
+    margin-left: 300PX;
+    align-items: center;
+}
+
+#resultado {
+    background-color: black;
+}
+
+#mediae {
+    background-color: black;
+}
