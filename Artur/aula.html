@@ -8,10 +8,21 @@
 </head>
 <body>
     
-</body>
-    <script src="aula.js">
+    <script>
 
-
+        const nome = 'Artur Gomes'
+        document.body.innerHTML +=`${nome}<br/>`
+        document.body.innerHTML +=`seu nome tem ${nome.length} letras<br/>`
+        document.body.innerHTML +=`a segunda letra do meu nome eh: ${nome.charAt(1)}<br/>`
+        document.body.innerHTML +=`${nome.indexOf('A')}<br/>`
+        document.body.innerHTML +=`${nome.lastIndexOf('A')}<br/>`
+        document.body.innerHTML +=`${nome.slice('2','5')}<br/>`
+        document.body.innerHTML +=`${nome.split('')}<br/>`
+        document.body.innerHTML +=`${nome.toUpperCase()}<br/>`
+        document.body.innerHTML +=`${nome.toLowerCase()}<br/>`
+        document.body.innerHTML +=`${nome.toString(2)}<br/>`
 
     </script>
+
+</body>
 </html>
