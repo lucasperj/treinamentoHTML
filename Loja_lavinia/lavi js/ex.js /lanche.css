@@ -1,0 +1,12 @@
+body {
+    background-image: url(https://conteudo.solutudo.com.br/wp-content/uploads/2020/01/lanches-rapidos.jpg);
+}
+section {
+    
+    background-color: rgb(247, 174, 40);
+    margin: 100px;
+}
+.lll{
+    padding: 70px;
+    margin-block-start: 50px;
+}
