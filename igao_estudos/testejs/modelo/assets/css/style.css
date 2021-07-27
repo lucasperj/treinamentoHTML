@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
 
 :root {
-    --primary-color: rgb(13,106,134);
+    --primary-color: rgb(42, 148, 235);
 }
 
 * {
     box-sizing: border-box;
     outline: 0;
-};
+}
 
 body {
     margin: 0;
@@ -26,5 +26,13 @@ body {
 }
 
 form input, form label, form button {
-    
+    display:block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input {
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
 }
