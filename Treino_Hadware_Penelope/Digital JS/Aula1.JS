@@ -11,5 +11,8 @@
 // console.log(lista);
 // alert(lista)
 
-var frutas = {nome:"maca", cor:"Red"}
-    console.log(frutas.cor)
+// var frutas = {nome:"maca", cor:"Red"}
+//     console.log(frutas.cor)
+
+var nome = ["Mae,'floresta","avo"]
+alert
