@@ -9,32 +9,40 @@
 
 
 
-const data = new Date('2019-04-20 20:20:59')
+// const data = new Date('2019-04-20 20:20:59')
 // console.log(data.toString());   // converteu os valores de Date para string com .toString()
 
-console('Dia', data.getDate());
+// console('Dia', data.getDate());
 
-console('Mes', data.getMonth());
+// console('Mes', data.getMonth());
 
-console('Ano', data.getFullYear());
+// console('Ano', data.getFullYear());
 
-console('Minute', data.getMinutes());
+// console('Minute', data.getMinutes());
 
-console('Seg', data.getSeconds());
+// console('Seg', data.getSeconds());
 
-console('ms', data.getMilliseconds());
+// console('ms', data.getMilliseconds());
 
-console('Dia da semana', data.getDay());  // 0 - Domingo, 6 - Sabado
+// console('Dia da semana', data.getDay());  // 0 - Domingo, 6 - Sabado
 
-console(data.toString());
+// console(data.toString());
 
 // console.log(Date.now());  // conta todos os milesimos de segundos da data unix ate agora, se usarmos o resultado (milisegundos) em um new Date(); ira mostrar a data atual.
 
+function zeroAEsquerda(num) {
+    return num >= 10 ? num : `0${num}`;
+}
+
 function formataData (data) {
-    const dia = data.getDate();
-    const mes = data.getMonth();
-    const ano = data.getFullYear();
-    const hora = data.getHours();
+    const dia = zeroAEsquerda(data.getDate());
+    const mes = zeroAEsquerda(data.getMonth() +1);
+    const ano = zeroAEsquerda(data.getFullYear());
+    const hora = zeroAEsquerda(data.getHours());
+    const min = zeroAEsquerda(data.getMinutes());
+    const seg = zeroAEsquerda(data.getSeconds());
+
+    return `${dia}/${mes}/${ano} ${hora}:${min}:${seg}`;
 }
 
 const data = new Date();
