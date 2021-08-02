@@ -21,7 +21,7 @@ function somarValores(){
         s1 = 'Refrigerante';
     }       
     let s3 = Number(valor)*Number(s2);
-    resultado.innerHTML = `O resultado de ${s1} pedidos:${s3}`;
+    resultado.innerHTML = `O valor a ser pago pelos ${s1} pedidos é: R$${s3},00.`;
 
 }
 
