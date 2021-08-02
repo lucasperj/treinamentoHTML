@@ -12,7 +12,7 @@
 
 const numero = [100, 200, 300, 400, 500, 600, 700, 800, 900];
 
-// const [um, dois, tres, ... resto] = numeros;   // ... rest, ... spread
+// const [um, dois, tres, ... resto] = numeros;   //significa ... rest, ... spread
 
 // console.log(um, dois, tres);
 // console.log(resto);
