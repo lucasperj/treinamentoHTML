@@ -8,7 +8,7 @@
         document.body.innerHTML+=`a` */
 
 
-var opcao= Number(prompt(' Escolha a sua regiao: \n 1 - Sul \n 2 - Sudeste \n 3 - Norte \n 4 - Nordeste \n 5 - Centro-Oeste: '))
+/*var opcao= Number(prompt(' Escolha a sua regiao: \n 1 - Sul \n 2 - Sudeste \n 3 - Norte \n 4 - Nordeste \n 5 - Centro-Oeste: '))
 var num1=Number(prompt("Digite o ddd da capital de seu estado: "))
 
 if (opcao == 1){
@@ -165,6 +165,18 @@ else if (opcao == 5){
 
 else {
         document.body.innerHTML = 'opcao incorreta, reinicie a pagina'
+}*/
+
+function resultado(){
+        const form = document.querySelector('.form')
+        function recebe(evento){
+                const nome=form.querySelector('.nome')
+                const sobrenome=form.querySelector('.sobrenome')
+                const idade=form.querySelector('.idade')
+                const peso=form.querySelector('.peso')             
+        }
+        form.addEventListener('submit',recebe)
 }
+resultado()
 
    
