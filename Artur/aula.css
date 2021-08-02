@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(17, 58, 75);
+    color: rgb(255, 255, 255);
+}
+.nome{
+    margin-left: 50px; 
+    text-align: center
+}
+.sobrenome{
+    margin-left: 13px; 
+    text-align: center
+}
+.idade{
+    margin-left: 52px; 
+    text-align: center
+}
+.peso{
+    margin-left: 60px; 
+    text-align: center
+}
