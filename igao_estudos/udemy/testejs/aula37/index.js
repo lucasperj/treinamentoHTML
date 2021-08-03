@@ -71,7 +71,14 @@ const pessoa = {
     sobrenome: 'Otavio'
 };
 
-for (let i in pessoa) {
-    console.log(i)
-};
+// for (let i in pessoa) {                // O for in funciona com objetos
+//     console.log(i, pessoa[i])
+// };
+ 
+for (let i of pessoa) {                // Vai dar erro.
 
+}
+
+// For Classico - Geralmente com iteraveis (array ou strings)
+// For in - Retorna o indice ou chave (string, array ou objetos)
+// For of - Retorna o valor em si (iteraveis, arrays ou strings)
