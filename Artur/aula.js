@@ -167,16 +167,39 @@ else {
         document.body.innerHTML = 'opcao incorreta, reinicie a pagina'
 }*/
 
-function resultado(){
-        const form = document.querySelector('.form')
-        function recebe(evento){
-                const nome=form.querySelector('.nome')
-                const sobrenome=form.querySelector('.sobrenome')
-                const idade=form.querySelector('.idade')
-                const peso=form.querySelector('.peso')             
+ function escopo(){
+        const form=document.querySelector('.form')
+        const resultado=document.querySelector('.resultado')
+        const pessoas = []
+        function recebeEventoForm (evento) {
+                evento.preventDefault();
+                const nome=form.querySelector('.nome');
+                const sobrenome=form.querySelector('.sobrenome');
+                const idade=form.querySelector('.idade');
+                const peso=form.querySelector('.peso');
+                
+                pessoas.push({
+                        nome: nome.value,
+                        sobrenome: sobrenome.value,
+                        peso: peso.value,
+                        idade: idade.value
+                })
+              
+        if (nome.value === '', sobrenome.value ==='',peso.value==='',idade.value===''){
+
+                resultado.innerHTML = 'Coloque algum valor valido'
+
         }
-        form.addEventListener('submit',recebe)
-}
-resultado()
+        else{
+
+                resultado.innerHTML =`<strong>Nome: (${nome.value})</strong><br/> <strong>Sobrenome:  (${sobrenome.value})</strong><br/>  <strong>Idade: ${idade.value} Anos</strong> <br/>  <strong>Peso: ${peso.value}kgs</strong><br/> `
+
+        }
+
+        }
+
+        form.addEventListener('submit', recebeEventoForm)
+        }
+escopo() 
 
    
