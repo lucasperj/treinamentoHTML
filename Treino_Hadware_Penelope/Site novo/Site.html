@@ -15,16 +15,37 @@
     <header>
         <h1>Minha Loja 2.0</h1>
     </header>
+
     <main>
         <div class="Title">
-            <h2>Produtos</h2>
+            <h2>Products</h2>
             <span>Lista de Produtos Da Minha Loja</span>
         </div>
         <div class="Card">
-            <button onclick="produto.adicionar()">Add Product</button>
-            <button onclick="produto.excluir()">Remove Product</button>
+            <div class="LineInput">
+                <label>Products</label>
+                <input type="text" id="produto" placeholder="Poduct Name">
+
+                <label>Value</label>
+                <input type="text" id="valor" placeholder="Product Value">
+            </div>
+
+            <button onclick="produto.salvar()">Save Product</button>
+            <button onclick="produto.cancelar()">Cancel Product</button>
+    
         </div>
-       
+       <div class="content">
+           <table border="1">
+                <thead>
+                    <th class="center">ID</th>
+                    <th>Produtc</th>
+                    <th>Value</th>
+                    <th>actions</th>
+                </thead>
+                <tbody>
+                </tbody>
+           </table>
+       </div>
     </main>
     
 </body>
