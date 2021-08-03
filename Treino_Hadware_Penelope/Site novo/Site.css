@@ -1,8 +1,10 @@
 *{
     margin: 0;
 }
+
 body {
     font-family: 'Mukta', sans-serif;
+    background-color: #f0f1f1;
 }
 
 header{
@@ -11,6 +13,67 @@ header{
     color:rgb(226, 92, 175);
     text-align:center;
 }
+
 main{
     padding:30px 50px;
+}
+
+.Card{
+    background-color:#fff;
+    border: 1px solid #ccc;
+    padding:20px;
+    margin-top: 15px;
+    border-radius:5px;
+}
+
+.LineInput{
+    display: grid;
+    margin-bottom: 10px;
+}
+
+input{
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius:3px;
+    outline:0;
+}
+button{
+    border: 0px;
+    padding: 10px;
+    outline:0;
+    background-color: rgb(147, 183, 224);
+    color:rgb(226, 92, 175);
+    border-radius: 3px;
+    font-weight:bold;
+    transition:all ease 0.5s;
+}
+button:hover{
+    background-color:rgb(130, 158, 190);
+}
+
+.content{
+    margin-top: 15px;
+
+}
+table{
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    width:100%;
+}
+table th{
+    background-color:rgb(216, 212, 212);
+}
+
+table th,td{
+    padding: 1px 5px;
+    text-align:left; 
+}
+
+
+table td img{
+    width:21px;
+}
+
+.center{
+    text-align:center;
 }
