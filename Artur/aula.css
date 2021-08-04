@@ -18,3 +18,22 @@ body{
     margin-left: 60px; 
     text-align: center
 }
+
+.form2{
+    background-color: rgb(91, 157, 233);
+    width: 40%;
+    margin: auto ;
+    margin-top: 50px;
+    border-radius: 35px;
+    text-align: center;
+    height: 25em;
+}
+.peso1{
+    margin-left: 65px; 
+}
+.altura1{
+    margin-left: 50px;
+}
+.sexo1{
+    margin-right: 135px;
+}

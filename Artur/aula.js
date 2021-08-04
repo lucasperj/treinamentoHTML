@@ -166,7 +166,7 @@ else if (opcao == 5){
 else {
         document.body.innerHTML = 'opcao incorreta, reinicie a pagina'
 }*/
-
+/*
  function escopo(){
         const form=document.querySelector('.form')
         const resultado=document.querySelector('.resultado')
@@ -187,7 +187,7 @@ else {
               
         if (nome.value === '', sobrenome.value ==='',peso.value==='',idade.value===''){
 
-                resultado.innerHTML = 'Coloque algum valor valido'
+                resultado.innerHTML = 'Preencha todas perguntas vazias'
 
         }
         else{
@@ -200,6 +200,47 @@ else {
 
         form.addEventListener('submit', recebeEventoForm)
         }
-escopo() 
+escopo() */
 
-   
+function imc(){
+        const form = document.querySelector('.form2')
+        const resultado = document.querySelector('.resultado')
+        const num=[]
+        function resultadoo (evento) {
+                evento.preventDefault();
+                const peso = parseFloat(form.querySelector('.peso1'));
+                const altura = parseFloat(form.querySelector('.altura1')); 
+                const total =peso/altura**2 
+        pessoas.push({
+                peso: peso.value,
+                altura: altura.value
+        })
+        if (total.value>=40){
+                resultado.innerHTML="Obesidade morbida"
+
+        }
+        else if (total.value>=35 && total.value<=39){
+                resultado.innerHTML="Obesidade nivel 2"
+
+        }
+        else if (total.value>=30 && total.value<=34.9){
+                resultado.innerHTML="Obesidade nivel 1"
+
+        }
+        else if (total.value>=25 && total.value<=29.9){
+                resultado.innerHTML="Sobrepeso"
+
+        }
+        else if (total.value>=18.5 && total.value<=24.9){
+                resultado.innerHTML="Normal"
+
+        }
+        else{
+                resultado.innerHTML="Magro"
+        }
+
+}
+        form.addEventListener('submit', resultadoo)
+
+
+}
