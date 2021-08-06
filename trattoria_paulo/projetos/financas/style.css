@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: rgb(231, 233, 207);
+    align-items: center;
+    text-align: center;
+}
+
+
+header {
+    background-color: rgb(2, 87, 34);
+    padding: 10px;
+    color: white;
+    text-align: center;
+    padding-bottom: 100px;
+}
+.container{
+    
+}
+
+.transactions{
+    display:flex;
+    width: 100%;
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    
+}
+
+.ent{
+    background-color: #fafafa;
+    padding: 80px;
+    display: flex;
+    border-radius: 7px;
+    margin: 10px;
+}
+
+.sai{
+    background-color: #fafafa;
+    padding: 80px;
+    display: flex;
+    border-radius: 7px;
+    margin: 10px;
+
+}
+
+.sal{
+    background-color: #fafafa;
+    padding: 80px;
+    display: flex;
+    border-radius: 7px;
+    margin : 10px;
+}
+
+img {
+    width: 40px;
+}
+button{
+    background-color: transparent;
+    border: none;
+}
+
+.actions {
+    text-align: center;
+    
+}
+
+.botao1{
+    color: rgb(17, 199, 17);
+    margin-right: 100px;
+}
+
+.botao2{
+    color: rgb(224, 17, 17);
+    margin-right: 40px;
+}
+.content {
+    margin-top:15px;
+}
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    width: 900px;
+    padding: 300px 500px;
+    margin:auto;
+}
+
+table th {
+    background-color: rgb(214, 214, 214);
+    padding: 1px 5px;
+    text-align: left;
+    align-content: center;
+}
+
