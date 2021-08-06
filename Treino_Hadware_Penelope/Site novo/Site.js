@@ -5,6 +5,7 @@ class Produto{
         this.id = 1 ;
         this.arrayprodutos = [];
         this.editId = null
+        
     }
     salvar(){
         let produto = this.lerDados();
@@ -18,10 +19,9 @@ class Produto{
             
         }
 
-
         this.listatabela();
         this.cancelar();
-
+        
     }   
 
     listatabela(){
@@ -141,4 +141,4 @@ class Produto{
 
 
 }
-var produto = new Produto();
+var produto = new Produto(); 
