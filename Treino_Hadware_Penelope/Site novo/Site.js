@@ -2,14 +2,20 @@ class Produto{
 
 
     constructor(){
-        this.id = 1;
+        this.id = 1 ;
         this.arrayprodutos = [];
+        this.editId = null
     }
     salvar(){
         let produto = this.lerDados();
 
         if(this.validacampos(produto)){
-            this.adicionar(produto);
+            if(this.editId == null){
+                this.adicionar(produto);
+            }else{
+                this.atualizar(this.editId, produto);
+            }
+            
         }
 
 
@@ -32,12 +38,15 @@ class Produto{
 
             td_id.innerText = this.arrayprodutos[i].id;
             td_produto.innerText = this.arrayprodutos[i].name;
-            td_valor.innerText = this.arrayprodutos[i].valor;
+            td_valor.innerText = this.arrayprodutos[i].valor.toLocaleString('en-US',{style:'currency',currency:'USD'});
             
             td_id.classList.add('center')
+            td_valor.classList.add('center')
+            td_produto.classList.add('center')
 
             let imgEdit = document.createElement('img');
             imgEdit.src = "Img/edit.png";
+            imgEdit.setAttribute("onclick","produto.Editar("+ JSON.stringify(this.arrayprodutos[i])+")");
             td_acao.appendChild(imgEdit);
 
             let imgDelete = document.createElement('img');
@@ -50,8 +59,25 @@ class Produto{
     }
 
     adicionar(produto){
+        produto.valor = parseFloat(produto.valor);
         this.arrayprodutos.push(produto);
         this.id++;
+    }
+
+    atualizar(id,produto){
+        for(let i = 0; i < this.arrayprodutos.length; i++)
+            if(this.arrayprodutos[i].id == id){
+                this.arrayprodutos[i].name = produto.name;
+                this.arrayprodutos[i].valor = produto.valor.toLocaleString('en-US',{style:'currency',currency:'USD'});
+            }
+    }
+
+    Editar(dados){
+        this.editId = dados.id;
+        document.getElementById('produto').value = dados.name; 
+        document.getElementById('valor').value = dados.valor;
+
+        document.getElementById('att').innerText='To update'
     }
 
     lerDados(){
@@ -60,6 +86,8 @@ class Produto{
         produto.id = this.id;
         produto.name = document.getElementById('produto').value;
         produto.valor = document.getElementById('valor').value;
+
+        
 
         
         
@@ -89,18 +117,24 @@ class Produto{
         document.getElementById('produto').value = "";
         document.getElementById('valor').value = "";
 
+        document.getElementById('att').innerText = 'Save New Product'
+        this.editId = null
+
     }
     
     deletar(id){
-        let tbody = document.getElementById('tbody')
+        if(confirm('Do You Really Want To Delete This Product ID '+ id)){
+            let tbody = document.getElementById('tbody')
 
         
-        for(let i = 0; i <this.arrayprodutos.length; i++){
-            if(this.arrayprodutos[i].id == id){
-                this.arrayprodutos.splice(i,1);
-                tbody.deleteRow(i);
-            }
+            for(let i = 0; i < this.arrayprodutos.length; i++){
+                if(this.arrayprodutos[i].id == id){
+                    this.arrayprodutos.pop(i,1);
+                    tbody.deleteRow(i);
+                }
+            }  
         }
+       
     }
 
 

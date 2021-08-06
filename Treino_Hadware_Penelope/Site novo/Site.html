@@ -13,13 +13,13 @@
 </head>
 <body>
     <header>
-        <h1>Minha Loja 2.0</h1>
+        <h1>My Store 2.0</h1>
     </header>
 
     <main>
         <div class="Title">
             <h2>Products</h2>
-            <span>Lista de Produtos Da Minha Loja</span>
+            <span> My Store Product List</span>
         </div>
         <div class="Card">
             <div class="LineInput">
@@ -30,7 +30,7 @@
                 <input type="text" id="valor" placeholder="Product Value">
             </div>
 
-            <button onclick="produto.salvar()">Save Product</button>
+            <button onclick="produto.salvar()" id="att">Save Product</button>
             <button onclick="produto.cancelar()">Cancel Product</button>
     
         </div>
@@ -38,9 +38,9 @@
            <table border="1">
                 <thead>
                     <th class="center">ID</th>
-                    <th>Produtc</th>
-                    <th>Value</th>
-                    <th class="center">actions</th>
+                    <th class="center">Produtc</th>
+                    <th class="center">Value</th>
+                    <th class="center">Actions</th>
                 </thead>
                 <tbody id="tbody">
 
