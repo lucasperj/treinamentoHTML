@@ -63,7 +63,7 @@ class Produto {
         for (let i = 0; i < this.arrayProdutos.length; i++) {
             if (this.arrayProdutos[i].id == id) {
                 this.arrayProdutos[i].nomedoproduto = produto.nomedoproduto
-                this.arrayProdutos[i].preço = produto.preço.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
+                this.arrayProdutos[i].preço = produto.preço;
             }
         }
     }
@@ -82,7 +82,7 @@ class Produto {
         var produto ={}
         produto.id = this.id;
         produto.nomedoproduto = document.getElementById ("produto").value;
-        produto.preço = document.getElementById ("preço").value;
+        produto.preço = document.getElementById ("preço").value.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
 
         return produto
     }
