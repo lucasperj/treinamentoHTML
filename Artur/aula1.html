@@ -1,30 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Titulo</title>
     <link rel="stylesheet" href="aula1.css"
-</head>
-<body>
-    <form action="aul1.html" name="imc" method="post" onsubmit="return CalculoImc();">
-
-        <p>Peso: <input type="text" name="peso"></p>
-        <p>Altura: <input type="text" name="altura"></p>
-        <p><input type="submit" value="Calcular">
-        <input type="reset" value="Limpar"></p>
-        <p>Resultado:<input type="text" name="resultado"></p>
-        
-        </form>
-</body>
-<script src="aula1.js">
-
-function CalculoImc(){
-var peso = parseFloat(document.formImc.peso.value);
-var altura = parseFloat(document.formImc.altura.value);
-var imc = peso/(altura*altura);
-document.formImc.resultado.value = imc.toFixed(2);
-}
-</script>
+  </head>
+  <body>
+    <section class="container">
+    <form method="POST" class="form">
+      <br/>
+      <p id="imc">IMC</p>
+      <label for="peso" id="peso1">Peso </label>
+      <input type="number" id = "peso" name="peso"><br/><br/>
+      <label for="altura" id="altura1">Altura: </label>
+      <input type="number" id = "altura" name="altura>"<br/><br/>
+      <button type="submit" id="enviar">Enviar</button>
+      <button type="reset" id="reset">Limpar</button>
+      <div id="resultado"></div>
+      </form><br/><br/>
+    <!-- //<div id="resultado"></div> -->
+  </body>
+  <script src="aula1.js"></script>
 </html>
