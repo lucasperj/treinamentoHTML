@@ -2,7 +2,7 @@ class Produto{
 
 
     constructor(){
-        this.id = 1;
+        this.id = 1 ;
         this.arrayprodutos = [];
         this.editId = null
     }
@@ -38,9 +38,11 @@ class Produto{
 
             td_id.innerText = this.arrayprodutos[i].id;
             td_produto.innerText = this.arrayprodutos[i].name;
-            td_valor.innerText = this.arrayprodutos[i].valor.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
+            td_valor.innerText = this.arrayprodutos[i].valor.toLocaleString('en-US',{style:'currency',currency:'USD'});
             
             td_id.classList.add('center')
+            td_valor.classList.add('center')
+            td_produto.classList.add('center')
 
             let imgEdit = document.createElement('img');
             imgEdit.src = "Img/edit.png";
@@ -57,6 +59,7 @@ class Produto{
     }
 
     adicionar(produto){
+        produto.valor = parseFloat(produto.valor);
         this.arrayprodutos.push(produto);
         this.id++;
     }
@@ -65,7 +68,7 @@ class Produto{
         for(let i = 0; i < this.arrayprodutos.length; i++)
             if(this.arrayprodutos[i].id == id){
                 this.arrayprodutos[i].name = produto.name;
-                this.arrayprodutos[i].valor = produto.valor;
+                this.arrayprodutos[i].valor = produto.valor.toLocaleString('en-US',{style:'currency',currency:'USD'});
             }
     }
 
@@ -124,9 +127,9 @@ class Produto{
             let tbody = document.getElementById('tbody')
 
         
-            for(let i = 0; i <this.arrayprodutos.length; i++){
+            for(let i = 0; i < this.arrayprodutos.length; i++){
                 if(this.arrayprodutos[i].id == id){
-                    this.arrayprodutos.splice(i,1);
+                    this.arrayprodutos.pop(i,1);
                     tbody.deleteRow(i);
                 }
             }  
